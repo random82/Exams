@@ -1,30 +1,57 @@
+#General notes
+* Based on https://www.microsoft.com/en-us/learning/exam-70-499.aspx
+
 #Install and configure Team Foundation Server (TFS)
 ##Install Team Foundation Server
-* SQL Version support
+* SQL version support - https://msdn.microsoft.com/en-us/library/vs/alm/tfs/administer/requirements
 * Install Team Foundation Server in a multi-tier or multi-machine environment
-* Install Team Foundation Server in a load-balanced environment, 
-* Set up a version control proxy server, 
+* Install Team Foundation Server in a load-balanced environment
+* Set up a version control proxy server
 * Schedule automatic backup and restore activities by using the TFS Administration Console
 
 ##Install and configure Lab Management
-* Set up environment templates,
-* Install and configure test agents, 
+* Set up environment templates
+* Install and configure test agents
 * Install and configure System Center Virtual Machine Manager (basic Virtual Machine Manager installation)
 * Create library shares or resource pools
 
 #Manage Team Foundation Server 
 ##Manage Team project collections
-* Move project collections
+* Move project collections - https://msdn.microsoft.com/en-us/library/dd936138%28v=vs.120%29.aspx
 * Manage team collections and projects
 * Create and configure team project collections
 * Create a team project using SharePoint and SQL Server Reporting Services (SSRS) 
-* Split and partition Team Project Collections
+* Split and partition Team Project Collections - https://msdn.microsoft.com/en-us/library/dd936158%28v=vs.120%29.aspx
 
-#Customize Team Foundation Server for team use
+Extra: 
+
+TFSConfig https://msdn.microsoft.com/en-us/library/vs/alm/tfs/administer/command-line/tfsconfig-cmd
+
+#Customize Team Foundation Server for a team use
 ##Configure team build definition
-* Set up for a symbol server and source server
-* Set up for custom build numbers
+
+This guide covers XAML builds. Start here:
+
+https://msdn.microsoft.com/en-us/library/ms181716%28v=vs.120%29.aspx <br/>
+https://msdn.microsoft.com/en-us/library/dd647547%28v=vs.120%29.aspx
+
+* Set up for a symbol server and source server - http://geekswithblogs.net/TarunArora/archive/2013/04/07/tfs-service---configure-source-and-symbol-server-settings.aspx, https://msdn.microsoft.com/en-us/library/hh190722%28v=vs.120%29.aspx 
+* Set up for custom build numbers - https://msdn.microsoft.com/en-us/library/hh190719%28v=vs.120%29.aspx 
 * Configure build log verbosity
 * Set up definition properties (test impact analysis, code analysis, automated unit testing, and architecture validation)
-* Set up build triggers (gated check-in, continuous integration, and scheduled build)
-* Configure the build drop location to be in source code control or a fileshare
+* Set up build triggers (gated check-in, continuous integration, and scheduled build) - https://msdn.microsoft.com/en-us/library/hh190718%28v=vs.120%29.aspx
+* Configure the build drop location to be in source code control or a fileshare - https://msdn.microsoft.com/en-us/library/bb778394%28v=vs.120%29.aspx#tfs 
+
+#Administer version control
+##Create and manage workspaces 
+https://msdn.microsoft.com/en-us/library/ms181383%28v=vs.120%29.aspx <br />
+https://msdn.microsoft.com/en-us/library/ms181378%28v=vs.120%29.aspx <br />
+https://msdn.microsoft.com/en-us/library/bb892960%28v=vs.120%29.aspx
+
+
+* Cloak, undo delete, and modify a workspace
+* Delete a workspace
+* Specify workspace visibility 
+* Unlock other users’ checkouts, pending changes, and code 
+* Choose a default workspace type for a collection
+* Delete a shelveset
